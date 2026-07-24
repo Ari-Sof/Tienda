@@ -1,41 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Minimarket La Emishita</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Minimarket La Emishita</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <span class="logo-icon">🛒</span>
-            <span class="logo-text">La Emishita <span class="logo-sub">minimarket</span></span>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">
+          <i class="fa-solid fa-cart-shopping logo-icon"></i>
+          <span class="logo-text">La Emishita <span class="logo-sub">minimarket</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link active">Contacto</a></li>
+          </ul>
         </div>
-
-        <nav class="navbar">
-      <ul class="nav-list">
-        <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-        <li><a href="productos.html" class="nav-link">Productos</a></li>
-        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-      </ul>
+      </div>
     </nav>
-    </header>
+  </header>
 
-    <main>
-         <section id="contacto" class="section section-alt">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-text">
-        Cerro San cosme, Aguaytia<br>
-        Teléfono / WhatsApp: 999 999 999<br>
-        Horario: todos los días de 7:00 a.m. a 9:00 p.m.
-      </p>
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1 data-aos="fade-up">Contáctanos</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Estamos para ayudarte</p>
+      </div>
     </section>
-    </main>
- <footer class="site-footer">
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-md-5" data-aos="fade-right">
+            <p class="section-text mb-4">
+              Escríbenos si tienes alguna consulta, quieres hacer un pedido o simplemente
+              saber si tenemos algún producto en stock. Te respondemos a la brevedad.
+            </p>
+            <ul class="contact-info">
+              <li><i class="fa-solid fa-location-dot"></i> Cerro San Cosme, Aguaytía</li>
+              <li><i class="fa-solid fa-phone"></i> 999 999 999 (también WhatsApp)</li>
+              <li><i class="fa-solid fa-clock"></i> Todos los días de 7:00 a.m. a 9:00 p.m.</li>
+              <li><i class="fa-solid fa-envelope"></i> contacto@laemishita.pe</li>
+            </ul>
+            <a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp
+            </a>
+          </div>
+          <div class="col-md-7" data-aos="fade-left">
+            <iframe class="contact-map" src="https://www.google.com/maps?q=Aguaytia,Peru&output=embed" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title text-center-block" data-aos="fade-up"><i class="fa-solid fa-paper-plane"></i>Déjanos tu consulta</h2>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shadow-sm border-0 p-4">
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="celular" class="form-label">Celular / WhatsApp</label>
+                  <input type="tel" class="form-control" id="celular" placeholder="999 999 999">
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu consulta o pedido"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  <i class="fa-solid fa-paper-plane"></i> Enviar consulta
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <p>&copy; 2026 Minimarket La Emishita. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

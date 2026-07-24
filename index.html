@@ -4,41 +4,224 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minimarket La Emishita</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
- 
+
   <header class="site-header">
-    <div class="logo">
-      <span class="logo-icon">🛒</span>
-      <span class="logo-text">La Emishita<span class="logo-sub">minimarket</span></span>
-    </div>
- 
-    <nav class="navbar">
-      <ul class="nav-list">
-        <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-        <li><a href="productos.html" class="nav-link">Productos</a></li>
-        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">
+          <i class="fa-solid fa-cart-shopping logo-icon"></i>
+          <span class="logo-text">La Emishita <span class="logo-sub">minimarket</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+            <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
- 
+
   <main>
+
     <section id="inicio" class="hero">
-      <h1 class="hero-title">El sabor de siempre, con el cariño de la abuela Emiliana</h1>
-      <p class="hero-text">
-        Abarrotes, bebidas, snacks y lo que falte para la casa. Atendemos todos los días
-        de 7:00 a.m. a 11:00 p.m.
-      </p>
-      <a href="productos.html" class="btn-primary">Ver productos</a>
+      <img src="img/inicio.jpg" alt="Interior del minimarket La Emishita" class="hero-img">
+      <div class="hero-overlay">
+        <div class="container">
+          <h1 class="hero-title" data-aos="fade-up">El sabor de siempre, con el cariño de la abuela Emiliana</h1>
+          <p class="hero-text" data-aos="fade-up" data-aos-delay="100">
+            Abarrotes, bebidas, snacks y lo que falte para la casa.
+          </p>
+          <a href="productos.html" class="btn-primary" data-aos="fade-up" data-aos-delay="200">Ver productos</a>
+        </div>
+      </div>
     </section>
+
+    <section class="quick-facts">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <i class="fa-solid fa-clock fact-icon"></i>
+            <p class="fact-text">Todos los días<br><strong>7:00 a.m. – 9:00 p.m.</strong></p>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-location-dot fact-icon"></i>
+            <p class="fact-text">Cerro San Cosme<br><strong>Aguaytía</strong></p>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-mobile-screen fact-icon"></i>
+            <p class="fact-text">Aceptamos<br><strong>Yape y Plin</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-6" data-aos="fade-right">
+            <span class="eyebrow">Bienvenidos</span>
+            <h2 class="section-title"><i class="fa-solid fa-store"></i>Tu tienda de siempre</h2>
+            <p class="section-text">
+              La Emishita es más que un minimarket: es el lugar donde encuentras lo que
+              necesitas para el día a día, cerca de tu casa y con precios justos.
+            </p>
+            <p class="section-text">
+              Desde el pan de la mañana hasta lo que falte para la cena, aquí encuentras
+              de todo un poco, atendido con el cariño de siempre.
+            </p>
+            <a href="nosotros.html" class="link-more">Conócenos más <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <img src="img/bienvenida.jpg" alt="Mostrador del minimarket" class="rounded-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title text-center-block" data-aos="fade-up"><i class="fa-solid fa-basket-shopping"></i>Nuestras categorías</h2>
+
+        <div class="row g-4 mt-2">
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
+            <a href="productos.html" class="preview-card">
+              <img src="img/pan.jpg" alt="Pan y abarrotes" class="preview-img">
+              <span class="preview-name">Panadería</span>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <a href="productos.html" class="preview-card">
+              <img src="img/bebidas.jpg" alt="Bebidas y gaseosas" class="preview-img">
+              <span class="preview-name">Bebidas</span>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <a href="productos.html" class="preview-card">
+              <img src="img/snacks.jpg" alt="Snacks y golosinas" class="preview-img">
+              <span class="preview-name">Snacks</span>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <a href="productos.html" class="preview-card">
+              <img src="img/limpieza.jpg" alt="Cuidado del hogar" class="preview-img">
+              <span class="preview-name">Hogar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-banner">
+      <img src="img/oferta.jpg" alt="Oferta de la semana" class="offer-img">
+      <div class="offer-overlay">
+        <div class="container">
+          <span class="eyebrow eyebrow-light" data-aos="fade-up">Oferta de la semana</span>
+          <h2 class="offer-title" data-aos="fade-up" data-aos-delay="100">2x1 en gaseosas de 500ml</h2>
+          <p class="offer-text" data-aos="fade-up" data-aos-delay="200">Válido hasta el 28/07/2026. Solo en tienda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title text-center-block" data-aos="fade-up"><i class="fa-solid fa-star"></i>Por qué elegirnos</h2>
+
+        <div class="row g-4 mt-2">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="card h-100 shadow-sm border-0 value-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-location-dot value-icon"></i>
+                <h3 class="card-title value-title">Cerca de ti</h3>
+                <p class="card-text value-text">A un paso de tu casa, en el corazón del barrio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="card h-100 shadow-sm border-0 value-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-tags value-icon"></i>
+                <h3 class="card-title value-title">Precios justos</h3>
+                <p class="card-text value-text">Lo básico de la despensa a precio de barrio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 shadow-sm border-0 value-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-motorcycle value-icon"></i>
+                <h3 class="card-title value-title">Delivery rápido</h3>
+                <p class="card-text value-text">Pide por WhatsApp y te lo llevamos a la puerta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title text-center-block" data-aos="fade-up"><i class="fa-solid fa-comment"></i>Lo que dicen nuestros clientes</h2>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p class="testimonial-text">Siempre encuentro todo lo que necesito, y me atienden súper rápido.</p>
+              <p class="testimonial-author">— Rosa M.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p class="testimonial-text">El delivery por WhatsApp me salvó más de una vez. Muy recomendado.</p>
+              <p class="testimonial-author">— Jorge P.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p class="testimonial-text">Precios justos y trato bien cercano, como debe ser en el barrio.</p>
+              <p class="testimonial-author">— Karina V.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final">
+      <div class="container text-center">
+        <h2 class="cta-title" data-aos="fade-up">¿Ya sabes qué te falta?</h2>
+        <p class="cta-text" data-aos="fade-up" data-aos-delay="100">Cerro San Cosme, Aguaytía · Todos los días 7:00 a.m. – 9:00 p.m.</p>
+        <a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+
   </main>
- 
+
   <footer class="site-footer">
     <p>&copy; 2026 Minimarket La Emishita. Todos los derechos reservados.</p>
   </footer>
- 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
